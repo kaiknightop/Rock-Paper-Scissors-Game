@@ -1,0 +1,137 @@
+body{
+    background: rgb(3, 3, 3);
+    color: white;
+    font-family: Arial;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(to right,#23a6d5, #ff02ff, #8f68ff, #ff02ff, #23a6d5);
+    background-clip: text;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 7s linear infinite;
+}
+@keyframes animate-gradient {
+    to {
+        background-position: 200%;
+    }
+}
+
+.move-icon{
+    height: 50px;
+}
+
+.move-button{
+    background-color: #500666;
+    border-width: 3px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.move-button:hover{
+    background-color: #c522af;
+    transition: 0.5s;
+}
+.move-button:active{
+    background-color: #8f68ff;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.result{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 50px;
+
+}
+
+.score{
+    margin-top: 60px;
+}
+
+.reset-score-button{
+    background-color: #8b197c;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.reset-score-button:hover{
+    background-color: red;
+    transition: 0.5s;
+}
+.reset-score-button:active{
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.win{
+    color: rgb(35, 238, 35);
+}
+.lose{
+    color: rgb(255, 43, 43);
+}
+.tie{
+    color: rgb(61, 216, 255);
+}
+
+/*Mobile phones*/
+@media (max-width: 600px) {
+    .container {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .move-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .js-result {
+      font-size: 1.2rem;
+    }
+  
+    .js-score {
+      font-size: 1rem;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 12px;
+    }
+  }
+
+  /*Tablets*/
+  @media (min-width: 601px) and (max-width: 900px) {
+    .move-icon {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .js-result {
+      font-size: 1.5rem;
+    }
+  
+    .js-score {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      font-size: 1rem;
+      padding: 10px 16px;
+    }
+  }
+
+  
+  
